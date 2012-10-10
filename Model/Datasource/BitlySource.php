@@ -1,7 +1,7 @@
 <?php
 
 // Import the rest data source from the rest plugin
-App::import('Datasouce', 'Rest.RestSource');
+App::uses('RestSource', 'Rest.Model/Datasource');
 
 /**
  * CakePHP DataSource for accessing the Bitly API.

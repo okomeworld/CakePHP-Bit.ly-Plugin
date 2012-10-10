@@ -43,15 +43,15 @@ class BitlyLink extends BitlyAppModel {
     'longUrl' => array(
       'notEmpty' => array(
         'rule' => 'notEmpty',
-        'message' => 'Please enter a long url',
+        'message' => '短縮するURLを入力してください',
         'required' => true,
         'allowEmpty' => false,
         'on' => 'create',
         'last' => true,
       ),
       'url' => array(
-        'rule' => 'url',
-        'message' => 'Please enter a valid long url',
+        'rule' => array('url',true),
+        'message' => 'URLを正確に入力してください',
         'required' => true,
         'allowEmpty' => false,
         'on' => 'create',
